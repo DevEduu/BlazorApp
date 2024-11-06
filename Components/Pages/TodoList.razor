@@ -4,7 +4,7 @@
 
 
 <button class=" btn btn-dark">Recarregar</button>
-<table class="table table">
+<table class="table table-striped">
     <thead>
     
     <tr>
@@ -12,19 +12,40 @@
             <th>Priority</th>
             <th>Done</th>
             <th>DoneDate</th>
-            <th>CategoryId</th>
-            <th>*</th>
+            <th>Ações</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
+    <tr style= "cursor:pointer; text-decoration:line-through","class="table-danger">
             <td>Title</td>
             <td>Priority</td>
-            <td>Description</td>
-            <td>Done</td>
-            <td>DoneDate</td>
-            <td>CategoryId</td>
-            <th>*</th>
+            <th><input type="checkbox"/></th>
+            <td>01/01/2024</td>
+            <th>
+                <button class="btn btn-dark">Editar</button>
+                <button class="btn btn-danger">Excluir</button>
+            </th>
+    </tr>
+    <tr>
+       <td colspan="5">
+                <form>
+                    <div class="mt-2">
+                        <label class="from-label" for="">Titulo</label>
+                        <input class="form-control" />
+                    </div>
+                    <div class="mt-2">
+                        <label class="from-label" for="">Prioridade</label>
+                        <select class="form-select">
+                            <option value="null">--Select</option>
+                            <option value="null">Urgente</option>
+                        </select>
+                       <div class="mt-4">
+                            <button class="btn btn-dark">Salvar</button>
+                            <button class="btn btn-default">Cancelar</button>
+                       </div>
+                    </div>
+                </form>
+       </td>
     </tr>
     </tbody>
 </table>
